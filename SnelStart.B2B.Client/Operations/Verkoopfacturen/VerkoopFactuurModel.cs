@@ -39,10 +39,10 @@ namespace SnelStart.B2B.Client.Operations
         /// Het tijdstip waarop de factuur is of zal vervallen.
         /// </summary>
         public DateTime? Vervaldatum { get; set; }
+		
         /// <summary>
         /// De klant/debiteur aan wie de factuur is gericht.
         /// </summary>
-
         public RelatieIdentifierModel Relatie { get; set; }
 
         /// <summary>
@@ -55,5 +55,10 @@ namespace SnelStart.B2B.Client.Operations
         /// Het factuurbedrag van de verkoopboeking.
         /// </summary>
         public decimal Factuurbedrag { get; set; }
+				
+        /// <summary>
+        /// De verkoopboeking die bij deze verkoopfactuur hoort
+        /// </summary>
+		public VerkoopboekingIdentifierModel VerkoopBoeking { get; set; }
     }
 }
