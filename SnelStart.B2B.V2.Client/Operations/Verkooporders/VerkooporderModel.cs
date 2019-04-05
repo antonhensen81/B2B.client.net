@@ -77,6 +77,11 @@ namespace SnelStart.B2B.V2.Client.Operations
         public AdresModel FactuurAdres { get; set; }
 
         /// <summary>
+        /// De orderreferentie van een verkooporder. Deze wordt in de e-factuur en in de factuur als PDF opgenomen
+        /// </summary>
+        public string Orderreferentie { get; set; }
+
+        /// <summary>
         /// Btw-ingavesoort voor deze order.
         /// Indien niet opgegeven, wordt Exclusief gehanteerd.
         /// </summary>
