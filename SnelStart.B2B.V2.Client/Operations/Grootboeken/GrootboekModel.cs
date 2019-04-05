@@ -53,5 +53,10 @@ namespace SnelStart.B2B.V2.Client.Operations
         /// De grootboekfunctie van het grootboek.
         /// </summary>
         public GrootboekFunctieModel GrootboekFunctie { get; set; }
+
+        /// <summary>
+        /// RgsCodes
+        /// </summary>
+        public RgsModel[] RgsCode { get; set; }
     }
 }
