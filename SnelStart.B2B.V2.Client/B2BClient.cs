@@ -13,6 +13,7 @@ namespace SnelStart.B2B.V2.Client
         public string AccessToken => _clientState.AccessToken;
 
         public ICompanyInformationOperations CompanyInformation { get; }
+        public IKasboekingenOperations Kasboekingen { get; }
         public IKostenplaatsenOperations Kostenplaatsen { get; }
         public IGrootboekenOperations Grootboeken { get; }
         public IGrootboekMutatiesOperations GrootboekMutaties { get; }
@@ -46,6 +47,7 @@ namespace SnelStart.B2B.V2.Client
             ConfigureServicePointManager(config);
 
             CompanyInformation = new CompanyInfoOperations(_clientState);
+            Kasboekingen = new KasboekingenOperations(_clientState);
             Kostenplaatsen = new KostenplaatsenOperations(_clientState);
             Grootboeken = new GrootboekenOperations(_clientState);
             GrootboekMutaties = new GrootboekMutatiesOperations(_clientState);
