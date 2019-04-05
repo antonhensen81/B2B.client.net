@@ -6,12 +6,8 @@ namespace SnelStart.B2B.Client.Operations
     public enum BtwTariefModel
     {
         
-        Hoog,
-
-        
-        Laag,
-
-        
+        Hoog,        
+        Laag,        
         Overig
     }
 }

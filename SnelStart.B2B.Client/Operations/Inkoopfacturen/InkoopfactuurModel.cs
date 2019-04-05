@@ -37,9 +37,6 @@ namespace SnelStart.B2B.Client.Operations
         /// </summary>
         public DateTime? VervalDatum { get; set; }
 
-        /// <summary>
-        /// 
-        /// </summary>
         public RelatieIdentifierModel Relatie { get; set; }
         /// <summary>
         /// De datum waarop de factuur is aangemaakt

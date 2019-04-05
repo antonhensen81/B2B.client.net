@@ -29,15 +29,20 @@ namespace SnelStart.B2B.Client.Operations
 
         public double? Verkoopprijs { get; set; }
 
+        /// <summary>
+        /// Een vlag dat aangeeft of een artikel niet meer actief is binnen de administratie.
+        /// </summary>
         public bool IsNonactief { get; }
 
+        /// <summary>
+        /// Een vlag dat aangeeft of voor een artikel wel of geen voorraad wordt bijgehouden.
+        /// </summary>
         public bool Voorraadcontrole { get; set; }
 
         public double TechnischeVoorraad { get; }
 
         public double VrijeVoorraad { get; }
 
-
-
+        public PrijsafspraakModel Prijsafspraak { get; set; }
     }
 }

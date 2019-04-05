@@ -95,6 +95,11 @@ namespace SnelStart.B2B.Client.Operations
         public string Memo { get; set; }
 
         /// <summary>
+        /// De orderreferentie van een verkooporder. Deze wordt in de e-factuur en in de factuur als PDF opgenomen
+        /// </summary>
+        public string Orderreferentie { get; set; }
+
+        /// <summary>
         /// Factuurkorting in procenten
         /// </summary>
         public double? Factuurkorting { get; set; }

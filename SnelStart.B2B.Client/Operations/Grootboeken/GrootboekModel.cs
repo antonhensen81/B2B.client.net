@@ -1,4 +1,6 @@
-﻿namespace SnelStart.B2B.Client.Operations
+﻿using System;
+
+namespace SnelStart.B2B.Client.Operations
 {
     /// <summary>
     /// De gegevenscontainer voor een grootboek.
@@ -16,6 +18,10 @@
         public GrootboekModel() : base(ResourceName)
         {
         }
+        /// <summary>
+        /// Het tijdstip waarop het grootboek is aangemaakt of voor het laatst is gewijzigd
+        /// </summary>
+        public DateTime? ModifiedOn { get; set; }
 
         /// <summary>
         /// De omschrijving van het grootboek.
@@ -47,5 +53,10 @@
         /// De grootboekfunctie van het grootboek.
         /// </summary>
         public GrootboekFunctieModel GrootboekFunctie { get; set; }
+
+        /// <summary>
+        /// RgsCodes
+        /// </summary>
+        public RgsModel[] RgsCode { get; set; }
     }
 }

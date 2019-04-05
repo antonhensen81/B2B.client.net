@@ -14,7 +14,9 @@ namespace SnelStart.B2B.Client
 
         public IKostenplaatsenOperations Kostenplaatsen { get; }
         public IGrootboekenOperations Grootboeken { get; }
+        public IGrootboekMutatiesOperations GrootboekMutaties { get; }
         public ILandenOperations Landen { get; }
+        public ICompanyInformationOperations CompanyInformation { get; }
         public IMemoriaalboekingenOperations Memoriaalboekingen { get; }
         public IDagboekenOperations Dagboeken { get; }
         public IRelatiesOperations Relaties { get; }
@@ -45,8 +47,10 @@ namespace SnelStart.B2B.Client
 
             Kostenplaatsen = new KostenplaatsenOperations(_clientState);
             Grootboeken = new GrootboekenOperations(_clientState);
+            GrootboekMutaties = new GrootboekMutatiesOperations(_clientState);
             Landen = new LandenOperations(_clientState);
             Memoriaalboekingen = new MemoriaalboekingenOperations(_clientState);
+            CompanyInformation = new CompanyInfoOperations(_clientState);
             Dagboeken = new DagboekenOperations(_clientState);
             Relaties = new RelatiesOperations(_clientState);
             Verkoopboekingen = new VerkoopboekingenOperations(_clientState);

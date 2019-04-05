@@ -71,12 +71,6 @@ namespace SnelStart.B2B.Client.Operations
         public decimal Factuurbedrag { get; set; }
 
         /// <summary>
-        /// Het openstaand saldo van de inkoopboeking.
-        /// Deze wordt alleen bij uitlezen gevuld, bij bijwerken wordt deze genegeerd.
-        /// </summary>
-        public decimal OpenstaandSaldo { get; set; }
-
-        /// <summary>
         /// De omzetregels van de inkoopboeking. De btw-bedragen staan hier niet in,
         /// deze staan in de Btw-collectie.
         /// </summary>

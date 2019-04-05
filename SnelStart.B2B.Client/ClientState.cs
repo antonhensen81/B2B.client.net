@@ -90,11 +90,26 @@ namespace SnelStart.B2B.Client
             return await ExecuteAndDeserialize<T[]>(request, cancellationToken).ConfigureAwait(false);
         }
 
+        public async Task<Response<T>> ExecuteGetAsync<T>(string resourceName, CancellationToken cancellationToken)
+        {
+            var resourceUri = Config.ApiBaseUriVersioned.AddSegment(resourceName);
+            var request = new HttpRequestMessage(HttpMethod.Get, resourceUri);
+            return await ExecuteAndDeserialize<T>(request, cancellationToken).ConfigureAwait(false);
+        }
+
         public async Task<Response<T>> ExecuteGetByIdAsync<T>(string resourceName, Guid id, CancellationToken cancellationToken) where T : IIdentifierModel
         {
             var resourceUri = Config.ApiBaseUriVersioned.AddSegment(resourceName);
             var itemUri = resourceUri.AddSegment(id);
             var request = new HttpRequestMessage(HttpMethod.Get, itemUri);
+            return await ExecuteAndDeserialize<T>(request, cancellationToken).ConfigureAwait(false);
+        }
+
+        public async Task<Response<T>> ExecuteGetByIdAsync<T>(string resourceName, Guid id, string queryString, CancellationToken cancellationToken) where T : IIdentifierModel
+        {
+            var resourceUri = Config.ApiBaseUriVersioned.AddSegment(resourceName);
+            var itemUri = resourceUri.AddSegment(id);
+            var request = new HttpRequestMessage(HttpMethod.Get, itemUri + "?" + queryString);
             return await ExecuteAndDeserialize<T>(request, cancellationToken).ConfigureAwait(false);
         }
         

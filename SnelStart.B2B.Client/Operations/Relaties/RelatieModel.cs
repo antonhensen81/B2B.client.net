@@ -40,7 +40,6 @@ namespace SnelStart.B2B.Client.Operations
         /// <summary>
         /// Geeft een instantie van een {SnelStart.B2B.Api.V1.Models.Relaties.RelatiesoortModel} terug.
         /// </summary>
-        //[JsonConverter(typeof(StringEnumConverter))]
         public List<string> RelatieSoort { get; set; }
 
         /// <summary>
@@ -108,6 +107,11 @@ namespace SnelStart.B2B.Client.Operations
         /// Het nummer van de Kamer van Koophandel van de relatie.
         /// </summary>
         public string KvkNummer { get; set; }
+
+        /// <summary>
+        /// Organisatie-identificatienummer then behoeve van het identificeren van overheidsorganisaties
+        /// </summary>
+        public string Oin { get; set; }
 
         /// <summary>
         /// De URL van de website van de relatie.

@@ -54,8 +54,9 @@ namespace SnelStart.B2B.Client
             : this(
                   subscriptionKey,
                   koppelSleutel,
-                  new Uri("https://auth.snelstart.nl"),
-                  new Uri("https://b2bapi.snelstart.nl")
+                  new Uri("https://auth-tst.snelstart.nl"),
+                  new Uri("http://localhost:41586")
+//                  new Uri("https://b2bapi-tst.snelstart.nl")
             )
         {
 
@@ -85,7 +86,7 @@ namespace SnelStart.B2B.Client
             SubscriptionKey = subscriptionKey;
             KoppelSleutel = koppelSleutel;
             AuthUri = new Uri(authUri, "b2b/token");
-            ApiBaseUriVersioned = new Uri(apiUri, "v1");
+            ApiBaseUriVersioned = new Uri(apiUri, "v2");
         }
 
         internal UsernamePasswordPair GetApiUsernamePassword()

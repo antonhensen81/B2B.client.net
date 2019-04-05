@@ -69,12 +69,6 @@ namespace SnelStart.B2B.Client.Operations
         public decimal Factuurbedrag { get; set; }
 
         /// <summary>
-        /// Het openstaand saldo van de verkoopboeking.
-        /// Deze wordt alleen bij uitlezen gevuld, bij bijwerken wordt deze genegeerd.
-        /// </summary>
-        public decimal OpenstaandSaldo { get; set; }
-
-        /// <summary>
         /// De betalingstermijn (in dagen) van de verkoopboeking.
         /// </summary>
         public int? Betalingstermijn { get; set; }
