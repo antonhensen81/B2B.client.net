@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace SnelStart.B2B.V2.Client.Operations
@@ -40,7 +38,6 @@ namespace SnelStart.B2B.V2.Client.Operations
         /// <summary>
         /// Geeft een instantie van een {SnelStart.B2B.Api.V1.Models.Relaties.RelatiesoortModel} terug.
         /// </summary>
-        //[JsonConverter(typeof(StringEnumConverter))]
         public List<string> RelatieSoort { get; set; }
 
         /// <summary>
@@ -110,6 +107,11 @@ namespace SnelStart.B2B.V2.Client.Operations
         public string KvkNummer { get; set; }
 
         /// <summary>
+        /// Organisatie-identificatienummer then behoeve van het identificeren van overheidsorganisaties
+        /// </summary>
+        public string Oin { get; set; }
+
+        /// <summary>
         /// De URL van de website van de relatie.
         /// </summary>
         public string WebsiteUrl { get; set; }
@@ -157,7 +159,7 @@ namespace SnelStart.B2B.V2.Client.Operations
         /// <summary>
         /// Het soort incasso ({SnelStart.B2B.Api.V1.Models.Relaties.IncassosoortModel}) dat van toepassing is op de relatie (optioneel).
         /// </summary>
-        public IncassosoortModel? IncassoSoort{ get; set; }
+        public IncassosoortModel? IncassoSoort { get; set; }
 
         /// <summary>
         /// Indien aan de relatie (deze instantie) een factuur wordt verstuurd, dan wordt de betreffende factuur doorgestuurd
