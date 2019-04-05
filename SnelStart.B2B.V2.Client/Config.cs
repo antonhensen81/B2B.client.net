@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Text;
-using SnelStart.B2B.Client.Interceptors;
+using SnelStart.B2B.V2.Client.Interceptors;
 
-namespace SnelStart.B2B.Client
+namespace SnelStart.B2B.V2.Client
 {
     public class Config
     {

@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using SnelStart.B2B.Client.Interceptors;
-using SnelStart.B2B.Client.Operations;
+using SnelStart.B2B.V2.Client.Interceptors;
+using SnelStart.B2B.V2.Client.Operations;
 
-namespace SnelStart.B2B.Client
+namespace SnelStart.B2B.V2.Client
 {
     internal class ClientState
     {

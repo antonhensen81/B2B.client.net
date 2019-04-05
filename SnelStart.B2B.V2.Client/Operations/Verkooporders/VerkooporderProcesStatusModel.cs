@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     /// <summary>
     /// Een enumeratie van Proces-statussen voor verkooporders.

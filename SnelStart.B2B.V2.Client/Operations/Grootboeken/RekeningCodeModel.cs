@@ -1,7 +1,7 @@
 ﻿using System;
-using SnelStart.B2B.Client.Operations;
+using SnelStart.B2B.V2.Client.Operations;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     /// <summary>
     /// Een enumeratie van rekening codes.

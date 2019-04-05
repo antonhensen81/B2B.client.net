@@ -3,7 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
-namespace SnelStart.B2B.Client.IntegrationTest
+namespace SnelStart.B2B.V2.Client.IntegrationTest
 {
     [TestFixture]
     public class LandenOperationsTest 

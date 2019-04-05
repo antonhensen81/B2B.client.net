@@ -1,6 +1,6 @@
-using SnelStart.B2B.Client.Operations;
+using SnelStart.B2B.V2.Client.Operations;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     /// <summary>
     /// Container met gegevens voor een boekingsreegel met een inkoopboeking

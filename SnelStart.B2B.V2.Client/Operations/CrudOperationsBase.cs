@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     internal class CrudOperationsBase<T> : ICrudOperations<T> where T : IIdentifierModel
     {

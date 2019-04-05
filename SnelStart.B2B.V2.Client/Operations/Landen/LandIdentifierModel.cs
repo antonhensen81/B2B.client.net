@@ -1,4 +1,4 @@
-﻿namespace SnelStart.B2B.Client.Operations
+﻿namespace SnelStart.B2B.V2.Client.Operations
 {
     /// <summary>
     /// Een container voor land informatie.

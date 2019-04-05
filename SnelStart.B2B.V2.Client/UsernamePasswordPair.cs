@@ -1,4 +1,4 @@
-﻿namespace SnelStart.B2B.Client
+﻿namespace SnelStart.B2B.V2.Client
 {
     internal class UsernamePasswordPair
     {

@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SnelStart.B2B.Client.Interceptors
+namespace SnelStart.B2B.V2.Client.Interceptors
 {
     internal abstract class RequestInterceptor : IRequestInterceptor
     {

@@ -1,10 +1,10 @@
-﻿using SnelStart.B2B.Client.Operations;
+﻿using SnelStart.B2B.V2.Client.Operations;
 using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SnelStart.B2B.Client
+namespace SnelStart.B2B.V2.Client
 {
     public class B2BClient : IB2BClient
     {

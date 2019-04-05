@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using SnelStart.B2B.Client.Operations;
+using SnelStart.B2B.V2.Client.Operations;
 
-namespace SnelStart.B2B.Client.IntegrationTest
+namespace SnelStart.B2B.V2.Client.IntegrationTest
 {
     public abstract class CrudTest<T> where T : IIdentifierModel
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using SnelStart.B2B.Client.Operations;
+using SnelStart.B2B.V2.Client.Operations;
 
-namespace SnelStart.B2B.Client
+namespace SnelStart.B2B.V2.Client
 {
     public interface IB2BClient : IDisposable
     {

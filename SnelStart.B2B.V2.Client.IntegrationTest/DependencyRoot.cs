@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using NUnit.Framework;
 
-namespace SnelStart.B2B.Client.IntegrationTest
+namespace SnelStart.B2B.V2.Client.IntegrationTest
 {
     internal class DependencyRoot
     {

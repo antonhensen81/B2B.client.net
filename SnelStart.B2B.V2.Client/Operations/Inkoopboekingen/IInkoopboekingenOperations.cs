@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     public interface IInkoopboekingenOperations : ICrudOperations<InkoopboekingModel>
     {

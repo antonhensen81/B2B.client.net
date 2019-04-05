@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SnelStart.B2B.Client.Operations
+namespace SnelStart.B2B.V2.Client.Operations
 {
     /// <summary>
     /// De gegevenscontainer voor een kostenplaats referentie.
