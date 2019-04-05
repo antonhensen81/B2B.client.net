@@ -22,7 +22,7 @@ namespace SnelStart.B2B.Client.Operations
         internal GrootboekIdentifierModel(string resourceName) : base(resourceName)
         {
         }
-        internal GrootboekIdentifierModel(Guid id) : this()
+        public GrootboekIdentifierModel(Guid id) : this()
         {
             Id = id;
         }
