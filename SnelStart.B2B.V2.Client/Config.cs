@@ -85,7 +85,7 @@ namespace SnelStart.B2B.V2.Client
             SubscriptionKey = subscriptionKey;
             KoppelSleutel = koppelSleutel;
             AuthUri = new Uri(authUri, "b2b/token");
-            ApiBaseUriVersioned = new Uri(apiUri, "v1");
+            ApiBaseUriVersioned = new Uri(apiUri, "v2");
         }
 
         internal UsernamePasswordPair GetApiUsernamePassword()
