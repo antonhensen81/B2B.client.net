@@ -7,6 +7,7 @@ namespace SnelStart.B2B.V2.Client
 {
     public interface IB2BClient : IDisposable
     {
+        ICompanyInformationOperations CompanyInformation { get; }
         IKostenplaatsenOperations Kostenplaatsen { get; }
         IGrootboekenOperations Grootboeken { get; }
         IGrootboekMutatiesOperations GrootboekMutaties { get; }

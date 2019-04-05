@@ -90,6 +90,13 @@ namespace SnelStart.B2B.V2.Client
             return await ExecuteAndDeserialize<T[]>(request, cancellationToken).ConfigureAwait(false);
         }
 
+        public async Task<Response<T>> ExecuteGetAsync<T>(string resourceName, CancellationToken cancellationToken)
+        {
+            var resourceUri = Config.ApiBaseUriVersioned.AddSegment(resourceName);
+            var request = new HttpRequestMessage(HttpMethod.Get, resourceUri);
+            return await ExecuteAndDeserialize<T>(request, cancellationToken).ConfigureAwait(false);
+        }
+
         public async Task<Response<T>> ExecuteGetByIdAsync<T>(string resourceName, Guid id, CancellationToken cancellationToken) where T : IIdentifierModel
         {
             var resourceUri = Config.ApiBaseUriVersioned.AddSegment(resourceName);
