@@ -15,5 +15,7 @@ namespace SnelStart.B2B.V2.Client.Operations
 
         public Task<Response<ArtikelModel[]>> GetAsync(string queryString) => GetAsync(queryString, CancellationToken.None);
         public Task<Response<ArtikelModel[]>> GetAsync(string queryString, CancellationToken cancellationToken) => ClientState.ExecuteGetAsync<ArtikelModel>(ResourceName, queryString, cancellationToken);
+        public Task<Response<ArtikelModel>> GetByIdAsync(Guid id, string queryString) => GetByIdAsync(id, queryString, CancellationToken.None);
+        public Task<Response<ArtikelModel>> GetByIdAsync(Guid id, string queryString, CancellationToken cancellationToken) => ClientState.ExecuteGetByIdAsync<ArtikelModel>(ResourceName, id, queryString, cancellationToken);
     }
 }
