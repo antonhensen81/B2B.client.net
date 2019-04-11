@@ -1,11 +1,11 @@
-![Build](https://snelstart-git.visualstudio.com/_apis/public/build/definitions/31e193b9-9709-4165-914a-80596aec79d0/2/badge)
-[![NuGet](https://img.shields.io/nuget/v/SnelStart.B2B.Client.svg)](https://www.nuget.org/packages/SnelStart.B2B.Client/)
-[![NuGet](https://img.shields.io/nuget/dt/SnelStart.B2B.Client.svg)](https://www.nuget.org/stats/packages/SnelStart.B2B.Client?groupby=Version)
+# B2B.client.net Version 2
+SnelStart B2B API .NET client version 2.
 
-# B2B.client.net
-SnelStart B2B API .NET client
+The SnelStart B2B API .NET client is an open source client library for the SnelStart B2B API version 2. 
 
-The SnelStart B2B API .NET client is an open source client library for the SnelStart B2B API.
+For documentation of the API and also for registering a new appliction see https://b2bapi-developer.snelstart.nl/
+
+Note: This client contains most definitions of the API, but is not complete. It is intended as a community effort.
 
 # License
 See the [LICENSE](./LICENSE.md) file for license rights and limitations (MIT).
@@ -24,6 +24,3 @@ await client.AuthorizeAsync();
 var kostenplaatsen = await client.Kostenplaatsen.GetAllAsync();
 ````
 
-# NuGet
-This library is now also available at NuGet:
-https://www.nuget.org/packages/SnelStart.B2B.Client/
